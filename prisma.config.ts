@@ -4,7 +4,6 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -16,7 +15,7 @@ model User {
   latitude              Float
   longitude             Float
   
-  subscriptionTier      String    @default("free")
+  subscriptionTier      String    npm install @prisma/internals --save-dev@default("free")
   subscriptionId        String?   @unique
   subscriptionExpires   DateTime?
   
